@@ -27,12 +27,12 @@
     <version.fontawesome>4.7.0</version.fontawesome>
     <version.arquillian.rest>1.0.0.Alpha4</version.arquillian.rest>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <version.maven.dependency.plugin>2.10</version.maven.dependency.plugin>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <version.jquery>2.2.4</version.jquery>
+    <version.maven.dependency.plugin>2.10</version.maven.dependency.plugin>
     <version.shrinkwrap>1.2.6</version.shrinkwrap>
-    <version.javaee>7.0</version.javaee>
+    <version.jquery>2.2.4</version.jquery>
     <version.swagger>1.5.17</version.swagger>
+    <version.javaee>7.0</version.javaee>
     <version.junit>4.12</version.junit>
     <version.primefaces-themes>1.0.10</version.primefaces-themes>
     <version.swagger.plugin>3.1.6</version.swagger.plugin>
@@ -195,7 +195,7 @@
     </repository>
   </repositories>
   <build>
-    <finalName>applicationPetstore</finalName>
+    <finalName>${project.artifactId}-${project.version}</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
